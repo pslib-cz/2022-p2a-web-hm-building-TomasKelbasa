@@ -17,7 +17,13 @@
 html, body{
 
     font-family: "OpenSans";
+    margin: 0;
 
+}
+
+.body{
+
+    margin: 0;
 }
 
 .nav{
@@ -27,13 +33,11 @@ html, body{
     margin: 0;
     display: block;
     position: relative;
+    background-image: linear-gradient(0deg, rgba(36, 36, 36, 0.4), rgba(36, 36, 36, 0.4)), linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #42332A 0%, rgba(255, 255, 255, 0) 100%), url("../media/pageheader-1920w.jpg");
+    min-height: 300px;
+    background-size: cover;
+    background-position: center;
 
-}
-
-.mainheader__img{
-
-    width: 100%;
-    object-fit: cover;
 }
 
 .mainheader__flex{
@@ -135,6 +139,100 @@ html, body{
 
 }
 
+.trust{
+
+    background-image: linear-gradient(0deg, rgba(36, 36, 36, 0.8), rgba(36, 36, 36, 0.8)), linear-gradient(180deg, rgba(66, 51, 42, 0.4) 0%, rgba(255, 255, 255, 0) 100%), url("../media/background-CTAblock-4460w.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 200px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.trust > .button--orange{
+
+    align-self: baseline;
+
+}
+
+.trust__title{
+
+    color: var(--sec-txt-color);
+    margin: 0;
+
+}
+
+.references{
+
+    margin: 1em;
+
+}
+
+.references__flex{
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+
+}
+
+.references__flex > .flex__item{
+
+    max-width: 600px;
+
+}
+
+.references__flex .flex__item__img{
+
+
+    min-width: 250px;
+    width: 100%;
+
+
+}
+
+.references__flex .flex__title{
+
+    font-size: 1.5em;
+
+}
+
+.references__flex .flex__title, .references__flex .flex__desc{
+
+    text-align: center;
+    width: 100%;
+    margin: 0.5em;
+
+}
+
+.footer{
+
+    background-color: var(--main-color);
+    display: flex;
+    padding: 2em 1em;
+    align-content: center;
+    flex-direction: column;
+}
+
+.footer__title, .footer__desc{
+
+    width: 100%;
+    text-align: center;
+    color: var(--sec-txt-color);
+
+}
+
+.button--orange{
+
+    background-color: var(--main-color);
+    color: var(--sec-txt-color);
+    padding: 0.5em 2em;
+
+
+}
+
 .button--dashed{
 
 
@@ -142,4 +240,20 @@ html, body{
     font-weight: 700;
     padding: 0.5em 2em;
     background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23EB6C27FF' stroke-width='3' stroke-dasharray='20%2c20' stroke-dashoffset='73' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+
+.button--white{
+
+    background-color: var(--bg-color);
+    color: var(--main-color);
+    padding: 0.5em 2em;
+    align-self: center;
+    justify-self: center;
+
+}
+
+.span--orange{
+
+    color: var(--main-color);
+
 }
