@@ -20,11 +20,10 @@ html, body{
     margin: 0;
     scroll-behavior: smooth;
 
-}
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 
-.body{
-
-    margin: 0;
 }
 
 .nav{
@@ -70,6 +69,7 @@ html, body{
     right: 0;
     left: 0;
     margin: 0 5%;
+    display: none;
     
 }
 
@@ -283,7 +283,9 @@ html, body{
     padding: 2em 1em;
     align-content: center;
     flex-direction: column;
+
 }
+
 
 .footer__title, .footer__desc{
 
@@ -291,6 +293,12 @@ html, body{
     text-align: center;
     color: var(--sec-txt-color);
 
+}
+
+.about{
+
+    margin: 1em;
+    flex-grow: 5;
 }
 
 .button--orange{
