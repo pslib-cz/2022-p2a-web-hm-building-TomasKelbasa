@@ -3,19 +3,28 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>HM Building</title>
+    <title>HM Building | Domů</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='./styles/main.css'>
 </head>
 <body>
     <div class="body">
     <nav class="nav">
-        <a class="nav__logo">
-            <img src="./media/logo.png" alt="logo hm building">
-        </a>
-        <a class="nav__button">
-            Burger
-        </a>
+        <div class="nav__main">
+            <a class="nav__logo" href="./index.html">
+                <img src="./media/logo.png" alt="logo hm building">
+            </a>
+            <a class="nav__button" id="menu-button">
+                Burger
+            </a>
+        </div>
+        <ul class="nav__menu" id="nav-menu">
+            <li class="menu__item active"><a href="#">DOMŮ</a></li>
+            <li class="menu__item"><a href="#services">SLUŽBY</a></li>
+            <li class="menu__item"><a href="#references">REFERENCE</a></li>
+            <li class="menu__item"><a href="./about.html">O NÁS</a></li>
+            <li class="menu__item"><a href="./contact.html">KONTAKT</a></li>
+        </ul>
     </nav>
     <header class="mainheader">
         <div class="mainheader__flex">
@@ -23,7 +32,7 @@
             <h3 class="mainheader__desc">liberecká stavební společnost</h3>
         </div>
     </header>
-    <div class="services">
+    <div class="services" id="services">
         <h2 class="services__title">Využijte škálu našich <span class="span--orange">služeb</span></h2>
         <p class="services__desc">Ačkoliv provádíme především <strong>průmyslové stavby</strong>, není pro nás problém postavit Vám <strong>rodinný domek na klíč</strong>, nebo jen hrubou stavbu. Nejsou nám cizí ani <strong>rekonstrukce budov</strong> a jejich údržba a to včetně okolních ploch.</p>
     </div>
@@ -68,7 +77,7 @@
         <h3 class="trust__title">Za kvalitu naší práce ručíme.</h3>
         <a class="button--orange">Přesvědčit se</a>
     </div>
-    <div class="references">
+    <div class="references" id="references">
         <h2 class="references__title">Rádi vám ukážeme naše <span class="span--orange">reference</span></h2>
         <p class="references__desc">Stojí za námi <strong>kvalitně vyhotovené zakázky</strong> dla konkrétních požadavků zadavatelů <strong>podepřené letitými zkušenostmi ve stavebnictví</strong>. To, že <strong>obrátit se na právě nás je vhodná volba potvrdí naši klienti</strong>, na jejichž stavbách jsme zanechali náš rukopis. Reference jsou jen zlomkem naší práce, za kterou se rozhodně nestydíme.</p>
         <div class="references__flex">
@@ -102,5 +111,8 @@
         <a class="button--white">Nezávazně poptat</a>
     </footer>
     </div>
+    <script>
+
+    </script>
 </body>
 </html>
