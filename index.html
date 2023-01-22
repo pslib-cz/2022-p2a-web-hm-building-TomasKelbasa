@@ -1,36 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="cs">
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>HM Building | Domů</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='./styles/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./styles/responsivity.css'>
 </head>
 <body>
-    <div class="body">
-    <nav class="nav">
-        <div class="nav__main">
-            <a class="nav__logo" href="./index.html">
-                <img src="./media/logo.png" alt="logo hm building">
-            </a>
-            <a onclick="expandMenu()" class="nav__button" id="menu-button">
-                Burger
-            </a>
-        </div>
-        <ul class="nav__menu" id="nav-menu">
-            <li class="menu__item active"><a href="#">DOMŮ</a></li>
-            <li class="menu__item"><a href="#services">SLUŽBY</a></li>
-            <li class="menu__item"><a href="#references">REFERENCE</a></li>
-            <li class="menu__item"><a href="./about.html">O NÁS</a></li>
-            <li class="menu__item"><a href="./contact.html">KONTAKT</a></li>
-        </ul>
-    </nav>
     <header class="mainheader">
-        <div class="mainheader__flex">
-            <h1 class="mainheader__title">HM Building.cz s.r.o.</h1>
-            <h3 class="mainheader__desc">liberecká stavební společnost</h3>
-        </div>
+        <nav class="nav">
+            <div class="nav__main">
+                <a class="nav__logo" href="./index.html">
+                    <img src="./media/logo.png" alt="logo hm building">
+                </a>
+                <a onclick="expandMenu()" class="nav__button" id="menu-button">
+                    Burger
+                </a>
+                <menu class="nav__menu" id="nav-menu">
+                    <li class="menu__item active"><a href="#">DOMŮ</a></li>
+                    <li class="menu__item"><a href="#services">SLUŽBY</a></li>
+                    <li class="menu__item"><a href="#references">REFERENCE</a></li>
+                    <li class="menu__item"><a href="./about.html">O NÁS</a></li>
+                    <li class="menu__item"><a href="./contact.html">KONTAKT</a></li>
+                </menu>
+            </div>
+        </nav>
+        <h1 class="mainheader__title">HM Building.cz s.r.o.<br><span>liberecká stavební společnost</span></h1>
     </header>
     <div class="services" id="services">
         <h2 class="services__title">Využijte škálu našich <span class="span--orange">služeb</span></h2>
@@ -42,7 +39,6 @@
             <div class="mflex__item__text">
                 <h3 class="item__title">Novostavby</h3>
                 <p class="item__desc">Dle požadavků investora jsme schopní dodat <strong>kompletní stavbu na klíč</strong>, případně zhotovit ucelenou část. Jsme schopni zajistit také projektovou dokumentaci.
-
                 Provádíme stavby jak průmyslového typu, tak rodinné stavby.</p>
                 <a class="button--dashed">Zobrazit více</a>
             </div>
@@ -73,8 +69,7 @@
         </div>
     </div>
     <div class="trust">
-        <h3 class="trust__title">Naše firma nabízí své služby ve stavebnictví od roku 2015.</h3>
-        <h3 class="trust__title">Za kvalitu naší práce ručíme.</h3>
+        <h3 class="trust__title">Naše firma nabízí své služby ve_stavebnictví od roku 2015.<br><br>Za kvalitu naší práce ručíme.</h3>
         <a class="button--orange">Přesvědčit se</a>
     </div>
     <div class="references" id="references">
@@ -110,7 +105,6 @@
         <p class="footer__desc">Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
         <a class="button--white">Nezávazně poptat</a>
     </footer>
-    </div>
     <script src="./script.js"></script>
 </body>
 </html>

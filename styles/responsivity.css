@@ -1,0 +1,136 @@
+@import "main.css";
+
+@media screen and (min-width: 768px) {
+
+    #menu-button{
+
+        display: none;
+
+    }
+
+    .nav{
+
+        margin: 2em 10%;
+        width: 80%;
+        padding: 0;
+
+    }
+
+    .nav__menu{
+
+        display: contents;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .menu__item{
+
+        width: fit-content;
+        margin: 0;
+        padding: 0;
+        align-self: center;
+        z-index: 1;
+
+    }
+
+    .menu__item > a{
+
+        margin: 0;
+        padding: 26px 1em;
+        object-fit: cover;
+        border: none;
+        height: fit-content;
+
+
+    }
+
+    .active > a{
+
+        background-color: var(--main-color);
+        color: var(--sec-txt-color);
+        font-weight: 300;
+
+    }
+
+}
+
+
+@media screen and (min-width: 1200px) {
+    
+    .mainheader{
+
+        min-height: 95vh;
+
+    }
+
+    .mainheader__title{
+
+        font-size: 6rem;
+
+    }
+
+    .mainheader__title > span{
+
+        font-size: 2.5rem;
+        font-weight: 300;
+        vertical-align: top;
+
+    }
+
+    .services{
+
+        text-align: center;
+        max-width: 800px;
+        align-self: center;
+
+    }
+
+    .services__title{
+
+        font-size: 3rem;
+        font-weight: 900;
+    }
+
+    .mflex{
+
+        align-items: center;
+
+    }
+
+    .mflex__item--left, .mflex__item--right{
+
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        max-width: 1200px;
+        grid-auto-flow: dense;
+        margin: 3em 0;
+    }
+
+    .mflex__item--left > img, .mflex__item--right > img{
+
+
+        height: 15em;
+        width: 100%;
+    
+    }
+
+    .mflex__item--right > img{
+
+        grid-column-start: 2;
+
+    }
+
+    .mflex__item--right > .mflex__item__text{
+
+
+
+    }
+
+    .mflex__item__text{
+
+        width: 90%;
+        padding: 2em;
+    }
+
+}
