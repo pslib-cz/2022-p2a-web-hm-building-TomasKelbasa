@@ -31,6 +31,7 @@ html, body{
     position: relative;
     background-color: var(--bg-color);
     flex-wrap: nowrap;
+    /*max-width: 1200px;*/
 }
 
 .nav__main{
@@ -121,7 +122,6 @@ html, body{
     min-height: 300px;
     background-size: cover;
     background-position: center;
-
 }
 
 .mainheader__title{
@@ -147,6 +147,13 @@ html, body{
     margin: 0.5em 0;
     font-weight: 400;
 
+}
+
+.mainheader > .button--orange{
+
+    position: absolute;
+    bottom: 0.5em;
+    left: 45%;
 }
 
 .services{
@@ -219,8 +226,9 @@ html, body{
     background-image: linear-gradient(0deg, rgba(36, 36, 36, 0.8), rgba(36, 36, 36, 0.8)), linear-gradient(180deg, rgba(66, 51, 42, 0.4) 0%, rgba(255, 255, 255, 0) 100%), url("../media/background-CTAblock-4460w.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     min-height: 200px;
-    padding: 1em;
+    padding: 0 1em;
 }
 
 .trust__container{
@@ -233,7 +241,7 @@ html, body{
 
 .trust__title{
 
-    margin: 2em 0;
+    margin: 1.5em 0;
 
 }
 
@@ -243,6 +251,17 @@ html, body{
 .references{
 
     margin: 1em;
+    max-width: 1200px;
+    align-self: center;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 5em;
+
+}
+
+.references__title, .references__desc{
+
+    text-align: left;
 
 }
 
@@ -252,6 +271,7 @@ html, body{
     flex-wrap: wrap;
     gap: 1em;
     justify-content: center;
+    margin-bottom: 2em;
 
 }
 
@@ -278,11 +298,18 @@ html, body{
 
 .references__flex .flex__title, .references__flex .flex__desc{
 
-    text-align: center;
     width: 100%;
     padding: 0.5em;
     margin: 0;
     box-sizing: border-box;
+
+
+}
+
+.references .button--orange{
+
+    text-align: center;
+    margin: auto 0;
 
 }
 
@@ -315,6 +342,13 @@ html, body{
     flex-grow: 5;
 }
 
+.button{
+
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
 .button--orange{
 
     background-color: var(--main-color);
@@ -329,7 +363,7 @@ html, body{
 
     color: var(--main-color);
     font-weight: 700;
-    padding: 0.5em 2em;
+    padding: 0.8em 2em;
     background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23EB6C27FF' stroke-width='3' stroke-dasharray='20%2c20' stroke-dashoffset='73' stroke-linecap='square'/%3e%3c/svg%3e");
 }
 
