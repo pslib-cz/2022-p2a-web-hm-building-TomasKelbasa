@@ -221,25 +221,22 @@ html, body{
     background-size: cover;
     min-height: 200px;
     padding: 1em;
-    display: flex;
-    flex-direction: column;
-
 }
 
+.trust__container{
 
-.trust > .button--orange{
-
-    align-self: baseline;
-    margin: 1em;
-    margin-left: 0;
+    color: var(--sec-txt-color);
+    margin: 1em auto;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .trust__title{
 
-    color: var(--sec-txt-color);
-    margin: 1em;
-    margin-left: 0;
+    margin: 2em 0;
+
 }
+
 
 
 
@@ -294,6 +291,7 @@ html, body{
     background-color: var(--main-color);
     text-align: center;
     padding: 2em 1em;
+    margin-bottom: 2em;
 
 }
 
@@ -303,6 +301,12 @@ html, body{
     width: 100%;
     color: var(--sec-txt-color);
 
+
+}
+
+.footer__desc{
+
+    padding-bottom: 2em;
 }
 
 .about{
@@ -336,6 +340,7 @@ html, body{
     padding: 0.5em 2em;
     align-self: center;
     justify-self: center;
+    font-weight: 600;
 
 }
 

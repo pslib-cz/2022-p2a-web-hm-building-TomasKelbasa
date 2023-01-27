@@ -27,6 +27,12 @@
         justify-content: flex-end;
     }
 
+    .nav__menu::before{
+
+        display: none;
+
+    }
+
     .menu__item{
 
         width: fit-content;
@@ -42,10 +48,16 @@
 
     .menu__item > a{
 
-        padding: 0;
-        margin: 2.5em 2em;
+        margin: 0;
+        padding: 2.5em 2em;
         border: none;
         text-align: center;
+
+    }
+
+    .menu__item > a:hover{
+
+        background-color: var(--sec-color);
 
     }
 
@@ -100,6 +112,12 @@
 
         animation-duration: 500ms;
         opacity: 0.9;
+
+    }
+
+    .footer__title{
+
+        font-size: 3rem;
 
     }
 
