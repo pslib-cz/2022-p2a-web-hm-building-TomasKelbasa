@@ -30,8 +30,7 @@ html, body{
     width: 100%;
     position: relative;
     background-color: var(--bg-color);
-    flex-wrap: nowrap;
-    /*max-width: 1200px;*/
+
 }
 
 .nav__main{
@@ -53,10 +52,27 @@ html, body{
     object-fit: cover;
 }
 
+.nav__hamburger{
+
+    margin: auto 5vw;
+
+}
+
 .nav__button{
 
-    align-self: flex-end;
-    justify-self: flex-end;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.75em;
+}
+
+.nav__button::after{
+
+    content: url("../media/hamburger.svg");
+
 }
 
 .nav__menu{
@@ -154,6 +170,7 @@ html, body{
     position: absolute;
     bottom: 0.5em;
     left: 45%;
+    display: none;
 }
 
 .services{
@@ -169,7 +186,7 @@ html, body{
 
 }
 
-.mflex{
+.mgrid{
 
     width: 100%;
     display: flex;
@@ -177,7 +194,7 @@ html, body{
 
 }
 
-.mflex__item--left, .mflex__item--right{
+.mgrid__item--left, .mgrid__item--right{
 
     margin: 1em;
     display: grid;
@@ -185,7 +202,7 @@ html, body{
 
 }
 
-.mflex__item--left > img, .mflex__item--right > img{
+.mgrid__item--left > img, .mgrid__item--right > img{
 
 
     width: 100%;
@@ -194,24 +211,30 @@ html, body{
     max-width: 700px;
 }
 
-.mflex__item--left > img{
+.mgrid__item--left > img{
 
 
-    border-bottom-right-radius: 3em;
-
-}
-
-.mflex__item--right > img{
-
-
-    border-bottom-left-radius: 3em;
-
+    border-bottom-right-radius: 1.5em;
 
 }
 
-.mflex__item__text{
+.mgrid__item--right > img{
+
+
+    border-bottom-left-radius: 1.5em;
+
+
+}
+
+.mgrid__item__text{
 
     margin: 1em 0;
+}
+
+.item__desc{
+
+    margin-bottom: 3em;
+
 }
 
 .item__title{
@@ -237,11 +260,13 @@ html, body{
     margin: 1em auto;
     width: 100%;
     max-width: 1200px;
+    
 }
 
 .trust__title{
 
     margin: 1.5em 0;
+    line-height: 1.5;
 
 }
 
@@ -318,7 +343,7 @@ html, body{
     background-color: var(--main-color);
     text-align: center;
     padding: 2em 1em;
-    margin-bottom: 2em;
+
 
 }
 
