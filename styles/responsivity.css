@@ -89,7 +89,7 @@
 
     }
 
-    .about{
+    .section{
 
         margin: 8em 1em;
 
@@ -121,7 +121,7 @@
 
     }
 
-    .about{
+    .section{
 
         margin: 1em;
 
@@ -377,13 +377,13 @@
 
     }
 
-    .about{
+    .section{
 
         margin: 8em;
 
     }
 
-    .about__title{
+    .section__title{
 
         text-align: center;
         font-size: 3rem;
@@ -391,10 +391,16 @@
     
     }
 
-    .about__list{
+    .section__list{
 
         margin: 2em 3em;
 
+    }
+
+    .section__list--marginless{
+
+        margin: 0 2em;
+    
     }
 
 
