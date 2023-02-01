@@ -393,6 +393,39 @@ body{
 
 }
 
+.gallery{
+
+    margin: 3em 1em;
+
+}
+
+
+.gallery__grid{
+
+    display: grid;
+    grid-template-columns: repeat(1, minmax(250px, 400px));
+    gap: 1em;
+    grid-auto-flow: dense;
+    justify-content: center;
+    height: max-content;
+
+}
+
+.gallery__grid__img{
+
+    object-fit: cover;
+    width: 100%;
+    object-fit: contain;
+
+
+}
+
+.grid__1x3{
+
+    grid-row: span 3;
+
+}
+
 .button{
 
     cursor: pointer;
