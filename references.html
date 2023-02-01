@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>HM Building | Domů</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./styles/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./styles/responsivity.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./styles/normalize.css'>
+</head>
+<body>
+    <header class="mainheader mainheader--short">
+        <nav class="nav">
+            <div class="nav__main">
+                <a class="nav__logo" href="./index.html">
+                    <img src="./media/logo.png" alt="logo hm building">
+                </a>
+                <div class="nav__hamburger">
+                    <a onclick="expandMenu()" class="nav__button" id="menu-button">menu</a>
+                </div>
+                <menu class="nav__menu" id="nav-menu">
+                    <li class="menu__item"><a href="./index.html">DOMŮ</a></li>
+                    <li class="menu__item"><a href="./index.html#services">SLUŽBY</a></li>
+                    <li class="menu__item active"><a href="#">REFERENCE</a></li>
+                    <li class="menu__item"><a href="./about.html">O NÁS</a></li>
+                    <li class="menu__item"><a href="./contact.html">KONTAKT</a></li>
+                </menu>
+            </div>
+        </nav>
+    </header>
+    <div class="references" id="references">
+        <h2 class="references__title">Reference</h2>
+        <p class="references__desc">Stojí za námi <strong>kvalitně vyhotovené zakázky</strong> dla konkrétních požadavků zadavatelů <strong>podepřené letitými zkušenostmi ve stavebnictví</strong>. To, že <strong>obrátit se na právě nás je vhodná volba potvrdí naši klienti</strong>, na jejichž stavbách jsme zanechali náš rukopis. Reference jsou jen zlomkem naší práce, za kterou se rozhodně nestydíme.</p>
+        <div class="references__flex">
+            <div class="flex__item">
+                <a class="flex__item__link" href="./index.html">
+                    <img class="flex__item__img" src="./media/reference/reference-hasicska-zbrojnice-600w.jpg" alt="fotka hasičské zbrojnice">
+                    <div class="flex__text">
+                        <h4 class="flex__title">Hasičská zbrojnice</h4>
+                        <p class="flex__desc">celková rekonstrukce</p>
+                    </div>
+                </a>
+            </div>
+            <div class="flex__item">
+                <a class="flex__item__link" href="./index.html">
+                    <img class="flex__item__img" src="./media/reference/reference-pradelna-600w.jpg" alt="fotka prádelny v centru Liberce">
+                    <div class="flex__text">
+                        <h4 class="flex__title">Samoobslužná prádelna</h4>
+                        <p class="flex__desc">stavební úpravy a opravy</p>
+                    </div>
+                </a>
+            </div>
+            <div class="flex__item">
+                <a class="flex__item__link" href="./index.html">
+                    <img class="flex__item__img" src="./media/reference/reference-plocha-600w.jpg" alt="fotka parkoviště/plochy">
+                    <div class="flex__text">
+                        <h4 class="flex__title">Venkovní plocha Restyl</h4>
+                        <p class="flex__desc">provedení venkovních ploch</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <h2 class="footer__title">Plácneme si pro Váš projekt?</h2>
+        <p class="footer__desc">Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
+        <a class="button button--white" href="#">Nezávazně poptat</a>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
