@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>HM Building | Kontakt</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./styles/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./styles/responsivity.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./styles/normalize.css'>
+</head>
+<body>
+    <header class="mainheader mainheader--short">
+        <nav class="nav">
+            <div class="nav__main">
+                <a class="nav__logo" href="./index.html">
+                    <img src="./media/logo.png" alt="logo hm building">
+                </a>
+                <div class="nav__hamburger">
+                    <a onclick="expandMenu()" class="nav__button" id="menu-button">menu</a>
+                </div>
+                <menu class="nav__menu" id="nav-menu">
+                    <li class="menu__item"><a href="./index.html">DOMŮ</a></li>
+                    <li class="menu__item"><a href="./index.html#services">SLUŽBY</a></li>
+                    <li class="menu__item"><a href="./references.html">REFERENCE</a></li>
+                    <li class="menu__item"><a href="./about.html">O NÁS</a></li>
+                    <li class="menu__item active"><a href="#">KONTAKT</a></li>
+                </menu>
+            </div>
+        </nav>
+    </header>
+    <div class="contact">
+        <h1 class="contact__title">Kontaktujte nás</h1>
+        <p class="contact__desc">Zavolejte anebo nám napište... kvalitní komunikace je jeden z pilířů, na kterém stavíme.</p>
+        <div class="contact__grid">
+            <div class="contact__methods">
+                <img src="./media/local_phone_24px.svg">
+                <p class="contact__methods__option option--phone">+420 775 550 564</p>
+                <p class="contact__methods__option option--email">stavby@hm-building.cz</p>    
+                <p class="contact__methods__option option--adress">Křižanská 12, Liberec XXII-Horní Suchá</p>
+            </div>
+            <a class="contact__link" href="https://mapy.cz/zakladni?q=K%C5%99i%C5%BEansk%C3%A1%2012%2C%20Liberec%20XXII-Horn%C3%AD%20Such%C3%A1&source=addr&id=9085775&ds=1&x=15.0022034&y=50.7607286&z=17">
+                <img class="contact__map" src="./media/mapa.jpg" alt="mapa sídla společnosti hm building">
+            </a>
+            <div class="contact__form">
+                <h3 class="form__title">Nezávazná poptávka služeb</h2>
+                <p class="form__desc">Plácneme se pro Váš projekt? Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
+                <label class="form__label" for="name">Jméno a příjmení</label>
+                <input class="form__input" type="text" id="name">
+                <label class="form__label" for="email">E-mail</label>
+                <input class="form__input" type="email" id="email">
+                <label class="form__label" for="telefon">Telefon</label>
+                <input class="form__input" type="telefon" id="telefon">
+                <label class="form__label" for="sluzba">Poptávaná služba</label>
+                <select class="form__selection" name="sluzba" id="sluzba">
+                    <option class="page__form_s_option" value="novostavba">Novostavba</option>
+                    <option class="page__form_s_option" value="prumstavba">Průmyslová stavba</option>
+                    <option class="page__form_s_option" value="rekonstrukce">Rekonstrukce domů a jiných staveb</option>
+                    <option class="page__form_s_option" value="kominukace">Komunikace a zpevněné plochy</option>
+                </select>
+                <label class="form__label" for="poznamka">Poznámka</label>
+                <textarea class="form__textarea" type="text" rows="10" id="poznamka"></textarea>
+                <a class="button button--orange" href="#">Odeslat nezávaznou poptávku</a>
+            </div>
+        </div>
+         
+    </div>
+    <footer class="footer">
+        <h2 class="footer__title">Plácneme si pro Váš projekt?</h2>
+        <p class="footer__desc">Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
+        <a class="button button--white" href="#">Nezávazně poptat</a>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
