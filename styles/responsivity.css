@@ -113,7 +113,13 @@
 
     .mainheader{
 
-        
+        min-height: 100vh;
+
+    }
+
+    .mainheader--short{
+
+        min-height: 0;
 
     }
 
@@ -145,13 +151,11 @@
     .mainheader__title{
 
         font-size: 4rem;
-        margin-top: 3em;
-        margin-bottom: auto;
 
 
     }
 
-    .mainheader > .button--orange{
+    .mainheader__heading > .button--orange{
 
         display: block;
     }
@@ -190,62 +194,44 @@
 
     .mgrid{
 
+        display: grid;
+        grid-template-columns: repeat(2,minmax(auto, 600px));
+        grid-auto-rows: 300px;
         align-items: center;
+        justify-content: center;
         padding: 0 1em;
         width: 100%;
         box-sizing: border-box;
         margin-bottom: 10em;
+        grid-auto-flow: dense;
         
 
     }
 
-    .mgrid__item--left, .mgrid__item--right{
+    .mgrid__img--left, .mgrid__img--right{
 
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        max-width: 1200px;
-        grid-auto-flow: dense;
-        margin: 2em 0;
-    }
-
-    .mgrid__item--left > img, .mgrid__item--right > img{
-
-
-        height: 15em;
-        width: 95%;
+        min-height: 80%;
         
  
     }
 
-    .mgrid__item--right > img{
+    .mgrid__img--right{
 
         grid-column-start: 2;
         margin-left: 5%;   
 
     }
 
-    .mgrid__item--left > img{
+    .mgrid__img--left{
 
         margin-right: 5%;
-
-    } 
-
-    .mgrid__item--right > .mgrid__item__text{
-
-        padding-right: 10%;
-
-    }
-
-    
-    .mgrid__item--left > .mgrid__item__text{
-
-        padding-left: 10%;
 
     }
 
     .mgrid__item__text{
 
         width: 90%;
+        margin: 5%;
 
     }
 
@@ -426,8 +412,8 @@
 
     .contact__link{
 
-        margin-left: 10em;
-        margin-right: -10em;
+        margin-left: 10vw;
+        margin-right: -10vw;
 
     }
 

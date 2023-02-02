@@ -142,12 +142,21 @@ body{
     min-height: 300px;
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 
 .mainheader--short{
 
     min-height: 0;
     height: fit-content;
+
+}
+
+.mainheader__heading{
+
+    position: absolute;
+    width: 100%;
+    bottom: 5%;
 
 }
 
@@ -160,8 +169,7 @@ body{
     font-weight: 800;
     font-size: 2rem;
     vertical-align: bottom;
-    margin-top: 40%;
-    margin-bottom: 1em;
+
 
 }
 
@@ -176,7 +184,7 @@ body{
 
 }
 
-.mainheader > .button--orange{
+.mainheader__heading > .button--orange{
 
     display: none;
     bottom: 1em;
@@ -200,21 +208,12 @@ body{
 
 .mgrid{
 
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-
-}
-
-.mgrid__item--left, .mgrid__item--right{
 
     margin: 1em;
-    display: grid;
-    grid-template-columns: 1fr;
 
 }
 
-.mgrid__item--left > img, .mgrid__item--right > img{
+.mgrid img{
 
 
     width: 100%;
@@ -222,14 +221,14 @@ body{
     object-fit: cover;
 }
 
-.mgrid__item--left > img{
+.mgrid__img--left{
 
 
     border-bottom-right-radius: 1.5em;
 
 }
 
-.mgrid__item--right > img{
+.mgrid__img--right{
 
 
     border-bottom-left-radius: 1.5em;
@@ -239,7 +238,7 @@ body{
 
 .mgrid__item__text{
 
-    margin: 1em 0;
+    margin: 2em 0;
 }
 
 .item__desc{
@@ -507,9 +506,11 @@ body{
 .contact__map{
 
     max-width: 100%;
-
+    z-index: 1;
 
 }
+
+
 
 .contact__form{
 
