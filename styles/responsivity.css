@@ -415,10 +415,12 @@
     }
 
     .contact__grid{
-        margin: 10em;
+        margin: auto;
         margin-top: 5em;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        max-width: 1200px;
+        align-items: center;
 
     }
 
