@@ -5,6 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>HM Building | Kontakt</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="description" content="Kontaktujte nás. Zavolejte anebo nám napište... kvalitní komunikace je jeden z pilířů, na kterém stavíme.">
     <link rel='stylesheet' type='text/css' media='screen' href='./styles/main.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='./styles/responsivity.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='./styles/normalize.css'>
@@ -17,7 +18,7 @@
                     <img src="./media/logo.png" alt="logo hm building">
                 </a>
                 <div class="nav__hamburger">
-                    <a onclick="expandMenu()" class="nav__button" id="menu-button">menu</a>
+                    <a href="#" onclick="expandMenu()" class="nav__button" id="menu-button">menu</a>
                 </div>
                 <menu class="nav__menu" id="nav-menu">
                     <li class="menu__item"><a href="./index.html">DOMŮ</a></li>
@@ -34,7 +35,6 @@
         <p class="contact__desc">Zavolejte anebo nám napište... kvalitní komunikace je jeden z pilířů, na kterém stavíme.</p>
         <div class="contact__grid">
             <div class="contact__methods">
-                <img src="./media/local_phone_24px.svg">
                 <p class="contact__methods__option option--phone"><a href="tel:+420775550564">+420 775 550 564</a></p>
                 <p class="contact__methods__option option--email"><a href="mailto:stavby@hm-building.cz">stavby@hm-building.cz</a></p>    
                 <p class="contact__methods__option option--adress"><a target="_blank" href="https://mapy.cz/zakladni?q=K%C5%99i%C5%BEansk%C3%A1%2012%2C%20Liberec%20XXII-Horn%C3%AD%20Such%C3%A1&source=addr&id=9085775&ds=1&x=15.0022034&y=50.7607286&z=17">Křižanská 12, Liberec XXII-Horní Suchá</a></p>
@@ -43,14 +43,14 @@
                 <img class="contact__map" src="./media/mapa.jpg" alt="mapa sídla společnosti hm building">
             </a>
             <div class="contact__form">
-                <h3 class="form__title">Nezávazná poptávka služeb</h2>
+                <h3 class="form__title">Nezávazná poptávka služeb</h3>
                 <p class="form__desc">Plácneme se pro Váš projekt? Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
                 <label class="form__label" for="name">Jméno a příjmení</label>
                 <input required="required" class="form__input" type="text" id="name">
                 <label class="form__label" for="email">E-mail</label>
                 <input required="required" class="form__input" type="email" id="email">
                 <label class="form__label" for="telefon">Telefon</label>
-                <input class="form__input" type="telefon" id="telefon">
+                <input class="form__input" type="text" id="telefon">
                 <label class="form__label" for="sluzba">Poptávaná služba</label>
                 <select class="form__selection" name="sluzba" id="sluzba">
                     <option class="page__form_s_option" value="novostavba">Novostavba</option>
@@ -59,7 +59,7 @@
                     <option class="page__form_s_option" value="kominukace">Komunikace a zpevněné plochy</option>
                 </select>
                 <label class="form__label" for="poznamka">Poznámka</label>
-                <textarea style="resize: none;" class="form__textarea" type="text" rows="10" id="poznamka"></textarea>
+                <textarea style="resize: none;" class="form__textarea" rows="10" id="poznamka"></textarea>
                 <a class="button button--orange" href="#">Odeslat nezávaznou poptávku</a>
             </div>
         </div>

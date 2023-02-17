@@ -274,7 +274,7 @@ body{
 
 .trust__title{
 
-    line-height: 1.5;
+    line-height: 1;
     font-weight: 700;
 
 }
@@ -318,6 +318,7 @@ body{
     cursor: pointer;
     text-decoration: none;
     color: var(--main-txt-color);
+    display: block;
 
 }
 
@@ -333,7 +334,7 @@ body{
 .references__flex .flex__title{
 
     font-size: 1.5em;
-
+    font-weight: 800;
 }
 
 .references__flex .flex__title, .references__flex .flex__desc{
@@ -360,6 +361,13 @@ body{
    
     color: var(--sec-txt-color);
 
+
+}
+
+.footer__title{
+
+    font-size: 1.5rem;
+    font-weight: 900;
 
 }
 
