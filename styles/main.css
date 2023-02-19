@@ -287,6 +287,7 @@ body{
     text-align: center;
     margin-top: 2em;
     margin-bottom: 5em;
+    flex-grow: 5;
 
 }
 
@@ -382,12 +383,20 @@ body{
     flex-grow: 5;
 }
 
+.content_wrapper{
+
+    max-width: 1100px;
+    margin: auto;
+
+}
+
 .section__p{
 
     max-width: 1100px;
     margin: auto;
 
 }
+
 
 .section__subtitle{
 
@@ -419,6 +428,7 @@ body{
 .gallery{
 
     margin: 3em 1em;
+    flex-grow: 5;
 
 }
 
